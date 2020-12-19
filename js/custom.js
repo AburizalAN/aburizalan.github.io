@@ -1,36 +1,42 @@
-if ($('#pagepiling').length > 0) {
-    const navbarColor = () => {
-        //after leaving section 2
-        if($('.pp-section.active').hasClass('light-section')){
-            $("#navbar").addClass("navbar-light");
-            $("#navbar").removeClass("navbar-dark");
-            $(".sosmed").addClass("sosmed-inverse");
-            $(".contact").addClass("contact-inverse");
-            $(".bottom-nav").addClass("bottom-nav-inverse");
-        } else {
-            $("#navbar").addClass("navbar-dark");
-            $("#navbar").removeClass("navbar-light");
-            $(".sosmed").removeClass("sosmed-inverse");
-            $(".contact").removeClass("contact-inverse");
-            $(".bottom-nav").removeClass("bottom-nav-inverse");
-        }
+
+const navbarColor = () => {
+    //after leaving section 2
+    if($('.pp-section.active').hasClass('light-section')){
+        $("#navbar").addClass("navbar-light");
+        $("#navbar").removeClass("navbar-dark");
+        $(".sosmed").addClass("sosmed-inverse");
+        $(".contact").addClass("contact-inverse");
+        $(".bottom-nav").addClass("bottom-nav-inverse");
+    } else {
+        $("#navbar").addClass("navbar-dark");
+        $("#navbar").removeClass("navbar-light");
+        $(".sosmed").removeClass("sosmed-inverse");
+        $(".contact").removeClass("contact-inverse");
+        $(".bottom-nav").removeClass("bottom-nav-inverse");
     }
-    
-    $(document).ready(function() {
-        $('#pagepiling').pagepiling({
-            scrollingSpeed: 280,
-            navigation: false,
-            anchors: ['header', 'about', 'skills', 'journey', 'portofolio', 'contact'],
-            menu: '#menu',
-            afterLoad: function(anchorLink, index){
-                navbarColor();
-            },
-            afterRender: function(anchorLink, index){
-                navbarColor();
-            }
-        });      
-    });
+
+    if($('.pp-section.active').hasClass('get-in-touch')) {
+        document.querySelector('.navbar').style.backgroundColor = "transparent";
+    } else {
+        document.querySelector('.navbar').style.backgroundColor = '';
+    }
 }
+
+
+$(document).ready(function() {
+    $('#pagepiling').pagepiling({
+        scrollingSpeed: 280,
+        navigation: false,
+        anchors: ['header', 'about', 'skills', 'journey', 'portofolio', 'contact'],
+        menu: '#menu',
+        afterLoad: function(anchorLink, index){
+            navbarColor();
+        },
+        afterRender: function(anchorLink, index){
+            navbarColor();
+        }
+    });      
+});
 
 $(document).ready(function() {
     $('.experiencelist .dicoding').magnificPopup({
@@ -112,5 +118,5 @@ $(document).ready(function() {
             }
         }
     });
-})
+});
 
