@@ -475,6 +475,7 @@ a:hover {
 }
 
 .portofolio .grid .image-wrapper {
+  display: block;
   position: relative;
   -ms-grid-row: 1;
   grid-area: 1 / 1 / 1 / -1;

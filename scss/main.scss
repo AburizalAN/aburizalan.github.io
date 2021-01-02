@@ -363,6 +363,7 @@ a {
 		grid-template-columns: repeat(12, 1fr);
 		align-items: center;
 		.image-wrapper {
+			display: block;
 			position: relative;
 			grid-area: 1 / 1 / 1 / -1;
 			@media screen and(min-width: 992px) {
