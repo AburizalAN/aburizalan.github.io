@@ -357,11 +357,13 @@ a {
 		&:last-child {
 			margin-bottom: 0;
 		}
+		width: 100%;
 		margin-bottom: 100px;
 		display: grid;
 		gap: 30px;
 		grid-template-columns: repeat(12, 1fr);
 		align-items: center;
+		justify-content: center;
 		.image-wrapper {
 			display: block;
 			position: relative;
@@ -534,7 +536,7 @@ a {
 				display: block;
 				margin-bottom: 30px;
 				box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
-				height: 300px;
+				height: 200px;
 				overflow: hidden;
 				background-color:rgb(216, 199, 255);
 				position: relative;
@@ -572,6 +574,7 @@ a {
 				grid-auto-flow: dense;
 				gap: 30px;
 				.grid-item {
+					height: 300px;
 					margin-bottom: 0px;
 					&:nth-child(3) {
 						grid-row-start: span 2;
@@ -588,6 +591,7 @@ a {
 				grid-auto-flow: dense;
 				gap: 30px;
 				.grid-item {
+					height: 300px;
 					margin-bottom: 0px;
 					&:nth-child(1) {
 						grid-column-start: span 2;
