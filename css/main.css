@@ -118,6 +118,20 @@ a:hover {
   color: #4827dd !important;
 }
 
+.navbar-light .myresume {
+  color: #484848;
+  padding: 10px 20px;
+  border: 1px solid #484848 !important;
+  border-radius: 5px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navbar-light .myresume:hover {
+  color: #772eff !important;
+  border-color: #772eff !important;
+}
+
 .sosmed {
   display: -webkit-box;
   display: -ms-flexbox;

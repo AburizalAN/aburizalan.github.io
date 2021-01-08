@@ -101,6 +101,17 @@ a {
 			background-color: rgb(72, 39, 221) !important;
 		}*/
 	}
+	.myresume {
+		color: #484848;
+		padding: 10px 20px;
+		border: 1px solid #484848 !important;
+		border-radius: 5px;
+		transition: all .2s ease;
+		&:hover {
+			color: #772eff !important;
+			border-color: #772eff !important;
+		}
+	}
 }
 
 .sosmed {
