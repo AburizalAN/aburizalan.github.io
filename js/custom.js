@@ -1,3 +1,19 @@
+//sidenav
+const collapse = document.querySelector('.navbar-toggler');
+const sideNav = document.querySelector('.sideNav');
+
+collapse.addEventListener('click', (event) => {
+    console.log('clicked');
+    document.querySelector('.sideNav').style.left = '0px';
+    collapse.style.opacity = '0';
+    event.stopPropagation();
+});
+
+
+window.addEventListener('click', () => {
+    collapse.style.opacity = '1';
+    document.querySelector('.sideNav').style.left = '-100%';
+})
 
 const navbarColor = () => {
     //after leaving section 2
