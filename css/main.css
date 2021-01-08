@@ -87,6 +87,19 @@ a:hover {
   width: auto;
 }
 
+.navbar .navbar-collapse .myresume {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navbar .navbar-collapse .myresume:hover {
+  color: #FFCE2E;
+  border-color: #FFCE2E;
+}
+
 .navbar-dark .nav-item .nav-link {
   color: white;
 }

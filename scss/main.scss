@@ -74,6 +74,16 @@ a {
 	}
 	.navbar-collapse {
 		width: auto;
+		.myresume {
+			padding: 10px 20px;
+			border: 1px solid white;
+			border-radius: 5px;
+			transition: all .2s ease;
+			&:hover {
+				color: #FFCE2E;
+				border-color: #FFCE2E;
+			}
+		}
 	}
 }
 
